@@ -1,0 +1,206 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f0e5;
+    color: #29251e;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+header {
+    background: #193d32;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 5px;
+}
+
+nav {
+    background: #a66b36;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe0a3;
+}
+
+section {
+    padding: 45px 8%;
+}
+
+section h2 {
+    color: #193d32;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.bosh {
+    background: #e7d5b5;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.bosh h2 {
+    font-size: 38px;
+}
+
+.bosh p {
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+.tugma {
+    display: inline-block;
+    background: #193d32;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.tugma:hover {
+    background: #a66b36;
+}
+
+#haqida p,
+#meros p {
+    max-width: 900px;
+    margin: 15px auto;
+}
+
+.kartalar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.karta {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px #00000018;
+}
+
+.karta img {
+    width: 160px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.karta h3 {
+    color: #193d32;
+    margin: 12px 0;
+}
+
+.sana {
+    color: #a66b36;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.maqsadlar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.maqsadlar div {
+    background: #e7d5b5;
+    padding: 25px;
+    border-left: 5px solid #a66b36;
+    border-radius: 8px;
+}
+
+.maqsadlar h3 {
+    color: #193d32;
+    margin-bottom: 10px;
+}
+
+.tarix {
+    background: #e7d5b5;
+}
+
+.voqea {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 750px;
+    border-left: 5px solid #193d32;
+    border-radius: 6px;
+}
+
+.voqea h3 {
+    color: #a66b36;
+}
+
+.shior {
+    text-align: center;
+    color: #a66b36;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 25px !important;
+}
+
+footer {
+    background: #193d32;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+@media (max-width: 800px) {
+    .kartalar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav a {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 550px) {
+    .kartalar {
+        grid-template-columns: 1fr;
+    }
+
+    .maqsadlar {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .bosh h2 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 30px 5%;
+    }
+}
